@@ -270,7 +270,7 @@
      </font>
     </property>
     <property name="text">
-     <string>Agregar Destinatario</string>
+     <string>Agregar Persona</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_4">
@@ -315,10 +315,10 @@
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources>
-  <include location="image1.qrc"/>
-  <include location="imagen2.qrc"/>
   <include location="imagen4.qrc"/>
+  <include location="image1.qrc"/>
   <include location="image3.qrc"/>
+  <include location="imagen2.qrc"/>
  </resources>
  <connections/>
 </ui>

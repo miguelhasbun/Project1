@@ -23,6 +23,8 @@ void MainWindow::on_pushButton_clicked()
 
 void MainWindow::on_pushButton_3_clicked()
 {
+
+    //Agregar persona.
     agregardestinatarios * prueba2= new agregardestinatarios();
     prueba2->show();
 

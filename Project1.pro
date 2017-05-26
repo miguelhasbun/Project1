@@ -29,4 +29,6 @@ RESOURCES += \
     image1.qrc \
     imagen2.qrc \
     image3.qrc \
-    imagen4.qrc
+    imagen4.qrc \
+    rsragregar.qrc \
+    rsragregarhombre.qrc

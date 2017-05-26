@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file>siluetahombre.png</file>
+    </qresource>
+</RCC>
