@@ -13,11 +13,17 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    agregardestinatarios.cpp \
+    agregarcorreos.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    agregardestinatarios.h \
+    agregarcorreos.h
 
-FORMS    += mainwindow.ui
+FORMS    += mainwindow.ui \
+    agregardestinatarios.ui \
+    agregarcorreos.ui
 
 RESOURCES += \
     image1.qrc \
