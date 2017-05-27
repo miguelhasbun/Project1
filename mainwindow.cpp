@@ -3,6 +3,7 @@
 #include "agregarcorreos.h"
 #include "agregardestinatarios.h"
 
+
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
@@ -14,6 +15,7 @@ MainWindow::~MainWindow()
 {
     delete ui;
 }
+vector<Persona*> MainWindow::personas;
 
 void MainWindow::on_pushButton_clicked()
 {

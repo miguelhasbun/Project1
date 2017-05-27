@@ -316,9 +316,9 @@
  <layoutdefault spacing="6" margin="11"/>
  <resources>
   <include location="imagen4.qrc"/>
+  <include location="imagen2.qrc"/>
   <include location="image1.qrc"/>
   <include location="image3.qrc"/>
-  <include location="imagen2.qrc"/>
  </resources>
  <connections/>
 </ui>

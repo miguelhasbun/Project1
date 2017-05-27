@@ -2,7 +2,10 @@
 #define AGREGARDESTINATARIOS_H
 
 #include <QMainWindow>
+#include<mainwindow.h>
+#include<iostream>
 
+using namespace std;
 namespace Ui {
 class agregardestinatarios;
 }
@@ -13,6 +16,9 @@ class agregardestinatarios : public QMainWindow
 
 public:
     explicit agregardestinatarios(QWidget *parent = 0);
+    TipoDeSexo obtenerTipoDeSexo();
+    string obtenerNombreSexo(TipoDeSexo n);
+    void Limpiar();
     ~agregardestinatarios();
 
 private slots:

@@ -15,11 +15,19 @@ TEMPLATE = app
 SOURCES += main.cpp\
         mainwindow.cpp \
     agregardestinatarios.cpp \
-    agregarcorreos.cpp
+    agregarcorreos.cpp \
+    persona.cpp \
+    correo.cpp \
+    oficina.cpp
 
 HEADERS  += mainwindow.h \
     agregardestinatarios.h \
-    agregarcorreos.h
+    agregarcorreos.h \
+    persona.h \
+    tipodesexo.h \
+    tipodeencomienda.h \
+    correo.h \
+    oficina.h
 
 FORMS    += mainwindow.ui \
     agregardestinatarios.ui \
