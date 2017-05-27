@@ -16,22 +16,37 @@ SOURCES += main.cpp\
         mainwindow.cpp \
     agregardestinatarios.cpp \
     agregarcorreos.cpp \
+<<<<<<< HEAD
     persona.cpp \
     correo.cpp \
     oficina.cpp
+=======
+    enviarcorreo.cpp \
+    vercorreosenviados.cpp \
+    usuarios.cpp
+>>>>>>> origin/master
 
 HEADERS  += mainwindow.h \
     agregardestinatarios.h \
     agregarcorreos.h \
+<<<<<<< HEAD
     persona.h \
     tipodesexo.h \
     tipodeencomienda.h \
     correo.h \
     oficina.h
+=======
+    enviarcorreo.h \
+    vercorreosenviados.h \
+    usuarios.h
+>>>>>>> origin/master
 
 FORMS    += mainwindow.ui \
     agregardestinatarios.ui \
-    agregarcorreos.ui
+    agregarcorreos.ui \
+    enviarcorreo.ui \
+    vercorreosenviados.ui \
+    usuarios.ui
 
 RESOURCES += \
     image1.qrc \
@@ -39,4 +54,11 @@ RESOURCES += \
     image3.qrc \
     imagen4.qrc \
     rsragregar.qrc \
-    rsragregarhombre.qrc
+    rsragregarhombre.qrc \
+    formprincipal.qrc \
+    formpersonas.qrc \
+    vercorreosresources.qrc \
+    gifemail.qrc \
+    emailsinanimacion.qrc \
+    userplus.qrc \
+    srsusergroup.qrc

@@ -1,24 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>agregarcorreos</class>
- <widget class="QMainWindow" name="agregarcorreos">
+ <class>VerCorreosEnviados</class>
+ <widget class="QMainWindow" name="VerCorreosEnviados">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
+    <width>943</width>
     <height>600</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Ver Correos</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="vercorreosresources.qrc">
+    <normaloff>:/vercorreos.png</normaloff>:/vercorreos.png</iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="label_5">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>30</y>
+      <x>30</x>
+      <y>50</y>
       <width>471</width>
       <height>51</height>
      </rect>
@@ -30,17 +34,17 @@
      </font>
     </property>
     <property name="text">
-     <string>Agregar Correo</string>
+     <string>Ver Correos Enviados</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_2">
+   <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>120</y>
+      <x>20</x>
+      <y>140</y>
       <width>221</width>
       <height>31</height>
      </rect>
@@ -55,32 +59,7 @@
      <enum>Qt::LeftToRight</enum>
     </property>
     <property name="text">
-     <string>De:</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_3">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>170</y>
-      <width>221</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Arial</family>
-      <pointsize>14</pointsize>
-     </font>
-    </property>
-    <property name="layoutDirection">
-     <enum>Qt::LeftToRight</enum>
-    </property>
-    <property name="text">
-     <string>A:</string>
+     <string>Nombre del Remitente:</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -89,9 +68,9 @@
    <widget class="QTextEdit" name="textEdit">
     <property name="geometry">
      <rect>
-      <x>150</x>
-      <y>120</y>
-      <width>241</width>
+      <x>260</x>
+      <y>140</y>
+      <width>281</width>
       <height>31</height>
      </rect>
     </property>
@@ -100,14 +79,39 @@
       <family>Arial</family>
       <pointsize>12</pointsize>
      </font>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>220</y>
+      <width>211</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>Nombre del Destinatario:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
    </widget>
    <widget class="QTextEdit" name="textEdit_2">
     <property name="geometry">
      <rect>
-      <x>150</x>
-      <y>170</y>
-      <width>241</width>
+      <x>260</x>
+      <y>220</y>
+      <width>281</width>
       <height>31</height>
      </rect>
     </property>
@@ -118,12 +122,12 @@
      </font>
     </property>
    </widget>
-   <widget class="QLabel" name="label_4">
+   <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>230</y>
-      <width>221</width>
+      <x>30</x>
+      <y>280</y>
+      <width>211</width>
       <height>31</height>
      </rect>
     </property>
@@ -143,63 +147,12 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QGroupBox" name="groupBox">
+   <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
-      <x>150</x>
-      <y>270</y>
-      <width>241</width>
-      <height>91</height>
-     </rect>
-    </property>
-    <property name="title">
-     <string/>
-    </property>
-    <widget class="QRadioButton" name="radioButton">
-     <property name="geometry">
-      <rect>
-       <x>30</x>
-       <y>10</y>
-       <width>101</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>Arial</family>
-       <pointsize>12</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>Carta</string>
-     </property>
-    </widget>
-    <widget class="QRadioButton" name="radioButton_2">
-     <property name="geometry">
-      <rect>
-       <x>30</x>
-       <y>50</y>
-       <width>101</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>Arial</family>
-       <pointsize>12</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>Paquete</string>
-     </property>
-    </widget>
-   </widget>
-   <widget class="QLabel" name="label_6">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>390</y>
-      <width>221</width>
+      <x>230</x>
+      <y>310</y>
+      <width>211</width>
       <height>31</height>
      </rect>
     </property>
@@ -213,7 +166,32 @@
      <enum>Qt::LeftToRight</enum>
     </property>
     <property name="text">
-     <string>Peso:</string>
+     <string>Aquí va el tipo</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>460</y>
+      <width>211</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>Dirección:</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -222,10 +200,10 @@
    <widget class="QTextEdit" name="textEdit_3">
     <property name="geometry">
      <rect>
-      <x>150</x>
-      <y>390</y>
-      <width>241</width>
-      <height>31</height>
+      <x>260</x>
+      <y>430</y>
+      <width>281</width>
+      <height>131</height>
      </rect>
     </property>
     <property name="font">
@@ -235,28 +213,39 @@
      </font>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QLabel" name="label_7">
     <property name="geometry">
      <rect>
-      <x>230</x>
-      <y>440</y>
-      <width>161</width>
-      <height>51</height>
+      <x>660</x>
+      <y>120</y>
+      <width>211</width>
+      <height>221</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Arial</family>
-      <pointsize>12</pointsize>
+      <pointsize>10</pointsize>
      </font>
     </property>
     <property name="text">
-     <string>Enviar</string>
+     <string/>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::PlainText</enum>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="gifemail.qrc">:/emailconmovimiento.gif</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
     </property>
    </widget>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
- <resources/>
+ <resources>
+  <include location="gifemail.qrc"/>
+  <include location="vercorreosresources.qrc"/>
+ </resources>
  <connections/>
 </ui>
