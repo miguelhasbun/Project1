@@ -18,36 +18,23 @@ SOURCES += main.cpp\
     agregarcorreos.cpp \
     correo.cpp \
     oficina.cpp \
+    tipodesexo.cpp \
     persona.cpp \
-    tipodesexo.cpp
-    persona.cpp \
-    correo.cpp \
-    oficina.cpp
-=======
     enviarcorreo.cpp \
     vercorreosenviados.cpp \
     usuarios.cpp
->>>>>>> origin/master
 
 HEADERS  += mainwindow.h \
     agregardestinatarios.h \
     agregarcorreos.h \
-<<<<<<< HEAD \
     correo.h \
     oficina.h \
     persona.h \
-    tipodeencomienda.h \
-    tipodesexo.h
-    persona.h \
     tipodesexo.h \
     tipodeencomienda.h \
-    correo.h \
-    oficina.h
-=======
     enviarcorreo.h \
     vercorreosenviados.h \
     usuarios.h
->>>>>>> origin/master
 
 FORMS    += mainwindow.ui \
     agregardestinatarios.ui \
