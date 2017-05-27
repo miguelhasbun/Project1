@@ -16,7 +16,11 @@ SOURCES += main.cpp\
         mainwindow.cpp \
     agregardestinatarios.cpp \
     agregarcorreos.cpp \
-<<<<<<< HEAD
+<<<<<<< HEAD \
+    correo.cpp \
+    oficina.cpp \
+    persona.cpp \
+    tipodesexo.cpp
     persona.cpp \
     correo.cpp \
     oficina.cpp
@@ -29,7 +33,12 @@ SOURCES += main.cpp\
 HEADERS  += mainwindow.h \
     agregardestinatarios.h \
     agregarcorreos.h \
-<<<<<<< HEAD
+<<<<<<< HEAD \
+    correo.h \
+    oficina.h \
+    persona.h \
+    tipodeencomienda.h \
+    tipodesexo.h
     persona.h \
     tipodesexo.h \
     tipodeencomienda.h \
