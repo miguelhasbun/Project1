@@ -4,6 +4,7 @@
 #include "agregardestinatarios.h"
 #include "enviarcorreo.h"
 #include "vercorreosenviados.h"
+#include "usuarios.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -44,4 +45,10 @@ void MainWindow::on_pushButton_4_clicked()
     VerCorreosEnviados * prueba4= new VerCorreosEnviados();
     prueba4->show();
 
+}
+
+void MainWindow::on_pushButton_6_clicked()
+{
+     Usuarios * prueba5= new Usuarios();
+     prueba5->show();
 }

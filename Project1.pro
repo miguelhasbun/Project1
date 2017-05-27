@@ -17,19 +17,22 @@ SOURCES += main.cpp\
     agregardestinatarios.cpp \
     agregarcorreos.cpp \
     enviarcorreo.cpp \
-    vercorreosenviados.cpp
+    vercorreosenviados.cpp \
+    usuarios.cpp
 
 HEADERS  += mainwindow.h \
     agregardestinatarios.h \
     agregarcorreos.h \
     enviarcorreo.h \
-    vercorreosenviados.h
+    vercorreosenviados.h \
+    usuarios.h
 
 FORMS    += mainwindow.ui \
     agregardestinatarios.ui \
     agregarcorreos.ui \
     enviarcorreo.ui \
-    vercorreosenviados.ui
+    vercorreosenviados.ui \
+    usuarios.ui
 
 RESOURCES += \
     image1.qrc \
@@ -42,4 +45,6 @@ RESOURCES += \
     formpersonas.qrc \
     vercorreosresources.qrc \
     gifemail.qrc \
-    emailsinanimacion.qrc
+    emailsinanimacion.qrc \
+    userplus.qrc \
+    srsusergroup.qrc
