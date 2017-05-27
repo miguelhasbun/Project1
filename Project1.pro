@@ -15,15 +15,21 @@ TEMPLATE = app
 SOURCES += main.cpp\
         mainwindow.cpp \
     agregardestinatarios.cpp \
-    agregarcorreos.cpp
+    agregarcorreos.cpp \
+    enviarcorreo.cpp \
+    vercorreosenviados.cpp
 
 HEADERS  += mainwindow.h \
     agregardestinatarios.h \
-    agregarcorreos.h
+    agregarcorreos.h \
+    enviarcorreo.h \
+    vercorreosenviados.h
 
 FORMS    += mainwindow.ui \
     agregardestinatarios.ui \
-    agregarcorreos.ui
+    agregarcorreos.ui \
+    enviarcorreo.ui \
+    vercorreosenviados.ui
 
 RESOURCES += \
     image1.qrc \
@@ -31,4 +37,9 @@ RESOURCES += \
     image3.qrc \
     imagen4.qrc \
     rsragregar.qrc \
-    rsragregarhombre.qrc
+    rsragregarhombre.qrc \
+    formprincipal.qrc \
+    formpersonas.qrc \
+    vercorreosresources.qrc \
+    gifemail.qrc \
+    emailsinanimacion.qrc
