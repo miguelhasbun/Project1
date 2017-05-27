@@ -16,7 +16,6 @@ SOURCES += main.cpp\
         mainwindow.cpp \
     agregardestinatarios.cpp \
     agregarcorreos.cpp \
-<<<<<<< HEAD \
     correo.cpp \
     oficina.cpp \
     persona.cpp \
