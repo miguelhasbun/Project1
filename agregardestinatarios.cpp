@@ -80,4 +80,5 @@ string agregardestinatarios::obtenerNombreSexo(TipoDeSexo n){
     }else if(n==TipoDeSexo::MUJER){
         return "MUJER";
     }
+    return "MUJER";
 }

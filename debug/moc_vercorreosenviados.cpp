@@ -71,11 +71,7 @@ void VerCorreosEnviados::qt_static_metacall(QObject *_o, QMetaObject::Call _c, i
     if (_c == QMetaObject::InvokeMetaMethod) {
         VerCorreosEnviados *_t = static_cast<VerCorreosEnviados *>(_o);
         Q_UNUSED(_t)
-        switch (_id) {
-   //     case 0: _t->on_radioButton_clicked(); break;
-    //    case 1: _t->on_radioButton_2_clicked(); break;
-        default: ;
-        }
+
     }
     Q_UNUSED(_a);
 }
