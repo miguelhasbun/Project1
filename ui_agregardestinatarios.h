@@ -17,7 +17,6 @@
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
-#include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QRadioButton>
 #include <QtWidgets/QStatusBar>
@@ -44,7 +43,6 @@ public:
     QPushButton *pushButton;
     QLabel *label_6;
     QLabel *label_7;
-    QMenuBar *menubar;
     QStatusBar *statusbar;
 
     void setupUi(QMainWindow *agregardestinatarios)
@@ -52,6 +50,9 @@ public:
         if (agregardestinatarios->objectName().isEmpty())
             agregardestinatarios->setObjectName(QStringLiteral("agregardestinatarios"));
         agregardestinatarios->resize(800, 657);
+        QIcon icon;
+        icon.addFile(QStringLiteral(":/people.png"), QSize(), QIcon::Normal, QIcon::Off);
+        agregardestinatarios->setWindowIcon(icon);
         centralwidget = new QWidget(agregardestinatarios);
         centralwidget->setObjectName(QStringLiteral("centralwidget"));
         label_5 = new QLabel(centralwidget);
@@ -78,7 +79,7 @@ public:
         textEdit->setFont(font2);
         label_2 = new QLabel(centralwidget);
         label_2->setObjectName(QStringLiteral("label_2"));
-        label_2->setGeometry(QRect(60, 230, 91, 41));
+        label_2->setGeometry(QRect(60, 220, 91, 41));
         label_2->setFont(font1);
         textEdit_2 = new QTextEdit(centralwidget);
         textEdit_2->setObjectName(QStringLiteral("textEdit_2"));
@@ -101,7 +102,7 @@ public:
         radioButton_2->setFont(font2);
         label_4 = new QLabel(centralwidget);
         label_4->setObjectName(QStringLiteral("label_4"));
-        label_4->setGeometry(QRect(40, 280, 101, 41));
+        label_4->setGeometry(QRect(40, 290, 101, 41));
         label_4->setFont(font1);
         textEdit_3 = new QTextEdit(centralwidget);
         textEdit_3->setObjectName(QStringLiteral("textEdit_3"));
@@ -131,10 +132,6 @@ public:
         label_7->setPixmap(QPixmap(QString::fromUtf8(":/siluetahombre.png")));
         label_7->setScaledContents(true);
         agregardestinatarios->setCentralWidget(centralwidget);
-        menubar = new QMenuBar(agregardestinatarios);
-        menubar->setObjectName(QStringLiteral("menubar"));
-        menubar->setGeometry(QRect(0, 0, 800, 21));
-        agregardestinatarios->setMenuBar(menubar);
         statusbar = new QStatusBar(agregardestinatarios);
         statusbar->setObjectName(QStringLiteral("statusbar"));
         agregardestinatarios->setStatusBar(statusbar);
@@ -146,7 +143,7 @@ public:
 
     void retranslateUi(QMainWindow *agregardestinatarios)
     {
-        agregardestinatarios->setWindowTitle(QApplication::translate("agregardestinatarios", "MainWindow", Q_NULLPTR));
+        agregardestinatarios->setWindowTitle(QApplication::translate("agregardestinatarios", "Agregar Persona", Q_NULLPTR));
         label_5->setText(QApplication::translate("agregardestinatarios", "Agregar Persona", Q_NULLPTR));
         label->setText(QApplication::translate("agregardestinatarios", "Id:", Q_NULLPTR));
         label_2->setText(QApplication::translate("agregardestinatarios", "Nombre:", Q_NULLPTR));

@@ -418,19 +418,13 @@
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources>
-<<<<<<< HEAD
-  <include location="imagen4.qrc"/>
-  <include location="imagen2.qrc"/>
-  <include location="image1.qrc"/>
-  <include location="image3.qrc"/>
-=======
+
   <include location="imagen2.qrc"/>
   <include location="userplus.qrc"/>
   <include location="image3.qrc"/>
   <include location="formprincipal.qrc"/>
   <include location="image1.qrc"/>
   <include location="imagen4.qrc"/>
->>>>>>> origin/master
  </resources>
  <connections/>
 </ui>
