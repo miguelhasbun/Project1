@@ -23,6 +23,7 @@ INPUT(
 ./debug\qrc_emailsinanimacion.o
 ./debug\qrc_userplus.o
 ./debug\qrc_srsusergroup.o
+./debug\qrc_carta.o
 ./debug\moc_mainwindow.o
 ./debug\moc_agregardestinatarios.o
 ./debug\moc_agregarcorreos.o

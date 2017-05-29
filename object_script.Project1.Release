@@ -23,6 +23,7 @@ INPUT(
 ./release\qrc_emailsinanimacion.o
 ./release\qrc_userplus.o
 ./release\qrc_srsusergroup.o
+./release\qrc_carta.o
 ./release\moc_mainwindow.o
 ./release\moc_agregardestinatarios.o
 ./release\moc_agregarcorreos.o

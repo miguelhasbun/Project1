@@ -38,24 +38,31 @@ void agregardestinatarios::on_radioButton_2_clicked()
 
 void agregardestinatarios::on_pushButton_clicked()
 {
-    string nombre,id,direccion;
-    TipoDeSexo sexo;
-    id=ui->textEdit->toPlainText().toUpper().toStdString();
-    nombre=ui->textEdit_2->toPlainText().toStdString();
-    direccion=ui->textEdit_3->toPlainText().toStdString();
+    if(ui->textEdit->toPlainText()!=NULL&&ui->textEdit_2->toPlainText()!=NULL&& ui->textEdit_3->toPlainText()!=NULL){
+        string nombre,id,direccion;
+        TipoDeSexo sexo;
+        id=ui->textEdit->toPlainText().toUpper().toStdString();
+        if(!existe(id)){
+            nombre=ui->textEdit_2->toPlainText().toStdString();
+            direccion=ui->textEdit_3->toPlainText().toStdString();
 
-    sexo=obtenerTipoDeSexo();
-    Persona *newPersona=new Persona(id,nombre,sexo,direccion);
-    MainWindow::personas.push_back(newPersona);
-    Limpiar();
-    for(Persona * tmp:MainWindow::personas){
-         cout<<"ID: "<<tmp->getId()<<endl;
-        cout<<"Nombre: "<<tmp->getNombre()<<endl;
-        cout<<"Sexo: "<<obtenerNombreSexo(tmp->getSexo())<<endl;
-        cout<<"Direccion: "<<tmp->getDireccion()<<endl;
+            sexo=obtenerTipoDeSexo();
+            Persona *newPersona=new Persona(id,nombre,sexo,direccion);
+            MainWindow::personas.push_back(newPersona);
+            Limpiar();
+            for(Persona * tmp:MainWindow::personas){
+                cout<<"ID: "<<tmp->getId()<<endl;
+                cout<<"Nombre: "<<tmp->getNombre()<<endl;
+                cout<<"Sexo: "<<obtenerNombreSexo(tmp->getSexo())<<endl;
+                cout<<"Direccion: "<<tmp->getDireccion()<<endl;
+            }
+            QMessageBox::information(this, "Estado", "La persona ha sido agregada con éxito");
+        }else{
+            QMessageBox::information(this, "Estado", "Ya existe una persona con ese Id");
+        }
+    }else{
+        QMessageBox::information(this, "Estado", "No se puedo agregar la persona\nExiste campos vacios");
     }
-
-    QMessageBox::information(this, "Estado", "La persona ha sido agregada con éxito");
 }
 
 TipoDeSexo agregardestinatarios::obtenerTipoDeSexo(){
@@ -80,5 +87,14 @@ string agregardestinatarios::obtenerNombreSexo(TipoDeSexo n){
     }else if(n==TipoDeSexo::MUJER){
         return "MUJER";
     }
-    return "MUJER";
+}
+
+
+bool agregardestinatarios::existe(string id){
+    for(Persona *tmp:MainWindow::personas){
+        if(tmp->getId()==id){
+            return true;
+        }
+    }
+    return false;
 }

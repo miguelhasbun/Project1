@@ -89,28 +89,6 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="label_4">
-    <property name="geometry">
-     <rect>
-      <x>510</x>
-      <y>290</y>
-      <width>211</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Pagul</family>
-      <pointsize>15</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>Ver Correos Enviados</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
    <widget class="QLabel" name="label_5">
     <property name="geometry">
      <rect>
@@ -177,25 +155,6 @@
     </property>
     <property name="pixmap">
      <pixmap resource="image3.qrc">:/sendemail.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_8">
-    <property name="geometry">
-     <rect>
-      <x>390</x>
-      <y>270</y>
-      <width>101</width>
-      <height>81</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="imagen2.qrc">:/mail.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -280,25 +239,6 @@
      <string>Agregar Persona</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_4">
-    <property name="geometry">
-     <rect>
-      <x>510</x>
-      <y>300</y>
-      <width>201</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Arial</family>
-      <pointsize>12</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>Ver Correos Enviados</string>
-    </property>
-   </widget>
    <widget class="QLabel" name="label_10">
     <property name="geometry">
      <rect>
@@ -348,8 +288,8 @@
    <widget class="QLabel" name="label_11">
     <property name="geometry">
      <rect>
-      <x>280</x>
-      <y>420</y>
+      <x>410</x>
+      <y>270</y>
       <width>81</width>
       <height>81</height>
      </rect>
@@ -397,9 +337,9 @@
    <widget class="QPushButton" name="pushButton_6">
     <property name="geometry">
      <rect>
-      <x>370</x>
-      <y>450</y>
-      <width>141</width>
+      <x>510</x>
+      <y>300</y>
+      <width>191</width>
       <height>31</height>
      </rect>
     </property>
@@ -418,13 +358,11 @@
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources>
-
-  <include location="imagen2.qrc"/>
-  <include location="userplus.qrc"/>
   <include location="image3.qrc"/>
-  <include location="formprincipal.qrc"/>
-  <include location="image1.qrc"/>
   <include location="imagen4.qrc"/>
+  <include location="userplus.qrc"/>
+  <include location="image1.qrc"/>
+  <include location="formprincipal.qrc"/>
  </resources>
  <connections/>
 </ui>

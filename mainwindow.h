@@ -21,6 +21,7 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     static vector<Persona*>personas;
     static Oficina oficinaPostal;
+    static bool exist(string id);
     ~MainWindow();
 private slots:
     void on_pushButton_clicked();

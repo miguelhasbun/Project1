@@ -56,4 +56,5 @@ RESOURCES += \
     gifemail.qrc \
     emailsinanimacion.qrc \
     userplus.qrc \
-    srsusergroup.qrc
+    srsusergroup.qrc \
+    carta.qrc

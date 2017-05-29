@@ -46,6 +46,7 @@ Correo* Oficina::firstMail(){
         correos.push_back(temp);
         temp=temp->sig;
     }
+
     return correos;
  }
 

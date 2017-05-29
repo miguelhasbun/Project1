@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>correo.png</file>
+        <file>paquete 1.png</file>
+    </qresource>
+</RCC>

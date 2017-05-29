@@ -18,7 +18,7 @@ public:
     string getDireccion();
     int correosEnviados();
     int correosRecibidos();
-
+    int correosrecibidos, correosenviados;
 
 
 private:
@@ -26,7 +26,7 @@ private:
     //ATRIBUTOS
     string id, nombre, direccion;
     TipoDeSexo sexo;
-    int correosrecibidos, correosenviados;
+   // int correosrecibidos, correosenviados;
 };
 
 #endif // PERSONA_H

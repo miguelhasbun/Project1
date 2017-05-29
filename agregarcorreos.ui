@@ -86,7 +86,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QTextEdit" name="textEdit">
+   <widget class="QTextEdit" name="txtRemitente">
     <property name="geometry">
      <rect>
       <x>150</x>
@@ -102,7 +102,7 @@
      </font>
     </property>
    </widget>
-   <widget class="QTextEdit" name="textEdit_2">
+   <widget class="QTextEdit" name="txtDestinatario">
     <property name="geometry">
      <rect>
       <x>150</x>
@@ -219,7 +219,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QTextEdit" name="textEdit_3">
+   <widget class="QTextEdit" name="txtPeso">
     <property name="geometry">
      <rect>
       <x>150</x>
@@ -251,7 +251,23 @@
      </font>
     </property>
     <property name="text">
-     <string>Enviar</string>
+     <string>AGREGAR</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>270</y>
+      <width>101</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
     </property>
    </widget>
   </widget>

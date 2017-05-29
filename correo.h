@@ -10,11 +10,16 @@ public:
     Correo(Persona * remitente,Persona * destina,TipoDeEncomienda tipo,double masa);
     Correo *sig;
     Correo *ant;
-
-private:
-    TipoDeEncomienda tipo;
     Persona * remitente;
     Persona * destinatario;
+    TipoDeEncomienda tipo;
+    double getMasa();
+    double getTotal();
+
+
+private:
+
+
     double masa;
     double total; //<-TOTAL A PAGAR POR EL CORREO
 };

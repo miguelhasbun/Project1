@@ -18,6 +18,7 @@ public:
     explicit agregardestinatarios(QWidget *parent = 0);
     TipoDeSexo obtenerTipoDeSexo();
     string obtenerNombreSexo(TipoDeSexo n);
+    bool existe(string id);
     void Limpiar();
     ~agregardestinatarios();
 

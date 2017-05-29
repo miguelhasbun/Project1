@@ -20,11 +20,19 @@ MainWindow::~MainWindow()
     delete ui;
 }
 vector<Persona*> MainWindow::personas;
+Oficina MainWindow::oficinaPostal;
 
 void MainWindow::on_pushButton_clicked()
 {
-    agregarcorreos * prueba= new agregarcorreos();
-    prueba->show();
+    if(personas.size()>=2){
+        agregarcorreos * prueba= new agregarcorreos();
+        prueba->show();
+
+    }else{
+        QMessageBox::information(this, "Información", "No hay suficiente personas para realizar esta operacion\nPor favor registre la persona involucradas para esta transaccion");
+    }
+
+
 }
 
 void MainWindow::on_pushButton_3_clicked()
@@ -38,8 +46,12 @@ void MainWindow::on_pushButton_3_clicked()
 
 void MainWindow::on_pushButton_2_clicked()
 {
-  agregarcorreos* prueba3= new agregarcorreos();
-  prueba3->show();
+    if(oficinaPostal.getCant()<=0){
+        QMessageBox::information(this, "Información", "No hay correos para enviar");
+    }else{
+      EnviarCorreo * prueba3= new EnviarCorreo;
+      prueba3->show();
+    }
 }
 
 void MainWindow::on_pushButton_4_clicked()
@@ -53,4 +65,14 @@ void MainWindow::on_pushButton_6_clicked()
 {
      Usuarios * prueba5= new Usuarios();
      prueba5->show();
+}
+
+bool MainWindow::exist(string id){
+    for(Persona* tmp:personas){
+        if(tmp->getId()==id){
+            return true;
+        }
+    }
+    return false;
+
 }
